@@ -367,10 +367,9 @@ class ASRTrainer(BaseTrainer):
             # Default config (greedy search)
             recognition_config = {
                 'num_batches': None,
-                'beam_width': 1,
+                'beam_width': 10,
                 'temperature': 1.0,
                 'repeat_penalty': 1.0,
-                'temperature': 1.0,
             }
             config_name = 'greedy'
 
